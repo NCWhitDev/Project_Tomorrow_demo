@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "Tomorrow_Shattered_Veil.sln"
+    "dotnet.defaultSolution": "Tomorrow_Shattered_Veil.slnx"
 }
