@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Chamber_wall_tileset-Sheet_0
+  m_Name: Chamber_walls_2
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: -4289764402705909967, guid: 37d06cb8d18f5ca4cb9acd303d44d10d, type: 3}
+  m_Sprite: {fileID: -1310926204, guid: df9d702ee253ed44793c0a43a847305a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

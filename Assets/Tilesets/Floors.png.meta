@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bacc62c6e9f4af240bc636b0e2677352
+guid: f0702efb05821074c95fd460dad2468b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1128161983042637900
-    second: Chamber_floor_tileset-Sheet_0
+      213: 543181889924136100
+    second: Floors_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Chamber_floor_tileset-Sheet_0
+      name: Floors_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 64
-        height: 64
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,20 +115,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4bfa4a757a6f750f0800000000000000
-      internalID: -1128161983042637900
+      spriteID: 4ac7a5d0d05c98700800000000000000
+      internalID: 543181889924136100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chamber_floor_tileset-Sheet_1
+      name: Floors_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e11557d51bc705343bdfecb3d0cb4499
-      internalID: -72317547
+      spriteID: bea15d4e5175ac64cbe658a9a77375b7
+      internalID: 298000204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chamber_floor_tileset-Sheet_2
+      name: Floors_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,8 +159,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77ca84e658fca294786d4b8dae91b5ab
-      internalID: -415286249
+      spriteID: 948c3e996111f29469fc4c474eb0df2e
+      internalID: 1763142393
       vertices: []
       indices: 
       edges: []
@@ -169,7 +169,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 142d8aeb6f4486a47a4de40a0f0a2d85
+    spriteID: e1ccc111bdd14da469cf321cb58ff389
     internalID: 0
     vertices: []
     indices: 
@@ -179,11 +179,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Chamber_floor_tileset-Sheet_0: -1128161983042637900
-      Chamber_floor_tileset-Sheet_1: -72317547
-      Chamber_floor_tileset-Sheet_2: -415286249
+      Floors_0: 543181889924136100
+      Floors_1: 298000204
+      Floors_2: 1763142393
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
