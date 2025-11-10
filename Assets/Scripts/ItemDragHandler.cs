@@ -1,11 +1,14 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     Transform originalParent;
     CanvasGroup canvasGroup;
 
+    public float minDropDistance = 2f; //Minimum distance from player to drop item
+    public float maxDropDistance = 3f; //Maximum distance from player to drop item
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -65,10 +68,47 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         }
         else
         {
-            //No slot under drop point
-            transform.SetParent(originalParent);
+            //If where we are dropping is not within the inventory slots
+            if(!isWithinInventory(eventData.position))
+            {
+                //Drop item
+                dropItem(originalSlot);
+            }
+            else
+            {
+                //Snap back to original slot
+                transform.SetParent(originalParent);
+            }
         }
 
         GetComponent<RectTransform>().anchoredPosition = Vector2.zero; //Center
+    }
+
+    bool isWithinInventory(Vector2 mousePos)
+    {
+        RectTransform inventoryRect = originalParent.parent.GetComponent<RectTransform>();
+        return RectTransformUtility.RectangleContainsScreenPoint(inventoryRect, mousePos);
+    }
+
+    void dropItem(Slot orginalSlot)
+    {
+        orginalSlot.currentItem = null;
+
+        //Find player to drop item near
+        Transform playerTransform = GameObject.FindGameObjectWithTag("Player")?.transform;
+        if (playerTransform == null)
+        {
+            Debug.LogError("Missing Player tag, cant drop item.");
+            return;
+        }
+        //Random offset so item doesn't drop exactly on player
+        Vector2 dropOffset = Random.insideUnitCircle.normalized * Random.Range(minDropDistance, maxDropDistance); //Random direction and distance within min and max drop distance
+        Vector2 dropPosition = (Vector2)playerTransform.position + dropOffset;
+
+        //Instantiate item in world
+        Instantiate(gameObject, dropPosition, Quaternion.identity); //Instantiate item prefab at drop position in world
+
+        //Destroy item in inventory UI
+        Destroy(gameObject);
     }
 }
