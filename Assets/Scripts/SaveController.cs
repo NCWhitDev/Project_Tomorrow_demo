@@ -9,6 +9,7 @@ public class SaveController : MonoBehaviour
 
     private string savelocation;
     private InventoryController inventoryController;
+    private Player player;
     /* 
      * Initializes the save location path when the game starts.
      */
@@ -31,6 +32,29 @@ public class SaveController : MonoBehaviour
     //    LoadGame();
     //}
 
+    public void FirstSaveGame()
+    {
+        SaveData saveData = new SaveData
+        {
+            playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position,
+            playerLevel = 1,
+            playerHealth = 100,
+            playerMana = 50,
+            playerStrength = 0,
+            playerIntelligence = 0,
+            playerEndurance = 0,
+            playerAgility = 0,
+            playerLuck = 0,
+            upgradeTier = inventoryController.GetUpgradeTier(), // Get current upgrade tier, So we check if the inventory is null, we add a new inventory controller
+            inventorySaveData = inventoryController.GetInventoryItems() ?? new List<InventorySaveData>(),  // Get current inventory items, So we check if the inventory is null, we add a new list of data
+            mapBoundary = UnityEngine.Object.FindFirstObjectByType<CinemachineConfiner2D>().BoundingShape2D.gameObject.name
+        };
+        File.WriteAllText(savelocation, JsonUtility.ToJson(saveData)); // Serialize and write to file
+        print("First Game Save");
+    }
+
+
+
     /*
      * Saves the current game state to a JSON file.
      * playerPosition: The current position of the player in the game world.
@@ -40,9 +64,18 @@ public class SaveController : MonoBehaviour
    {
         SaveData saveData = new SaveData
         {
-            playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position,                                 
-            mapBoundary = UnityEngine.Object.FindFirstObjectByType<CinemachineConfiner2D>().BoundingShape2D.gameObject.name, 
-            inventorySaveData = inventoryController.GetInventoryItems() ?? new List<InventorySaveData>()  // Get current inventory items, So we check if the inventory is null, we add a new list of data
+            playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position,
+            playerLevel = player.getLevel(),
+            playerHealth = player.getHealth(),
+            playerMana = player.getMana(),
+            playerStrength = player.getStrength(),
+            playerIntelligence = player.getIntelligence(),
+            playerEndurance = player.getEndurance(),
+            playerAgility = player.getAgility(),
+            playerLuck = player.getLuck(),
+            upgradeTier = inventoryController.GetUpgradeTier(), // Get current upgrade tier, So we check if the inventory is null, we add a new inventory controller
+            inventorySaveData = inventoryController.GetInventoryItems() ?? new List<InventorySaveData>(),  // Get current inventory items, So we check if the inventory is null, we add a new list of data
+            mapBoundary = UnityEngine.Object.FindFirstObjectByType<CinemachineConfiner2D>().BoundingShape2D.gameObject.name
         };
         File.WriteAllText(savelocation, JsonUtility.ToJson(saveData)); // Serialize and write to file
         print("Game Saved");
@@ -53,15 +86,27 @@ public class SaveController : MonoBehaviour
         if (File.Exists(savelocation))
         {
             SaveData saveData = JsonUtility.FromJson<SaveData>(File.ReadAllText(savelocation)); // Reads and deserialize from file
+            
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+            //Set player stats
+            player.setLevel(saveData.playerLevel);
+            player.setHealth(saveData.playerHealth);
+            player.setMana(saveData.playerMana);
+            player.setStrength(saveData.playerStrength);
+            player.setIntelligence(saveData.playerIntelligence);
+            player.setEndurance(saveData.playerEndurance);
+            player.setAgility(saveData.playerAgility);
+            player.setLuck(saveData.playerLuck);
+
             GameObject.FindGameObjectWithTag("Player").transform.position = saveData.playerPosition; // Restore player position
             FindFirstObjectByType<CinemachineConfiner2D>().BoundingShape2D = GameObject.Find(saveData.mapBoundary).GetComponent<BoxCollider2D>(); // Restore map boundary
-
+            inventoryController.upgradeTier = saveData.upgradeTier; // Restore inventory upgrade tier
             inventoryController.SetInventoryItems(saveData.inventorySaveData); // Restore inventory items
         }
         else
         {
             Debug.LogWarning("Save file not found!");
-            SaveGame(); // Create a new save file if none exists
+            FirstSaveGame(); // Create a new save file if none exists
             inventoryController.SetInventoryItems(new List<InventorySaveData>());
             print("New save file created at: " + savelocation);
         }

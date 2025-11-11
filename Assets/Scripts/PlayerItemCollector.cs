@@ -5,6 +5,7 @@ public class PlayerItemCollector : MonoBehaviour
 
     private InventoryController inventoryController; // Reference to the InventoryController
     private GameObject nearbyItem; // Reference to the nearby item
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,8 +26,6 @@ public class PlayerItemCollector : MonoBehaviour
                 return;
             }
 
-            Debug.Log("PlayerItemCollector picked up: " + itemComp.Name);
-
             if (inventoryController == null)
             {
                 Debug.LogError("InventoryController not found in scene.");
@@ -37,6 +36,7 @@ public class PlayerItemCollector : MonoBehaviour
             if (itemAdded)
             {
                 itemComp.PickUp();
+                Debug.Log("PlayerItemCollector picked up: " + itemComp.Name);
                 Destroy(nearbyItem);
                 nearbyItem = null;
             }

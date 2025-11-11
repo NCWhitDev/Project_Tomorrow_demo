@@ -5,17 +5,17 @@ using UnityEngine;
 public class InventoryController : MonoBehaviour
 {
     private ItemDict itemDict; // Reference to the ItemDict component
-
     public GameObject inventoryPanel; // Reference to the inventory UI panel
     public GameObject itemSlotPrefab; // Reference to the item slot prefab
     public int slotCount; // Number of slots in the inventory
+    public int upgradeTier; // Current upgrade tier of the inventory
     public GameObject[] itemPrefabs; // Array of item prefabs to populate the inventory
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         itemDict = FindFirstObjectByType<ItemDict>(); // Find the ItemDict component in the scene
-
+        
         //for (int i = 0; i < slotCount; i++)
         //{
         //    Slot slot = Instantiate(itemSlotPrefab, inventoryPanel.transform).GetComponent<Slot>();
@@ -90,5 +90,56 @@ public class InventoryController : MonoBehaviour
                 }
             }
         }
+    }
+
+    public int bagUpgrade()
+    {
+        if (slotCount == 27)
+        {
+            Debug.Log("Can't upgrade, Tier 4 Backpack is at maximum capacity.");
+        }
+
+        // Upgrade logic
+        if (slotCount == 0)
+        {
+            Debug.LogWarning("BackPackUpgrade: InventoryController not found. Returning default check 1.");
+            return 1; // Or some default value indicating failure
+        }
+
+        if (upgradeTier == 0)
+        {
+            //Tier 1 upgrade
+            upgradeTier = 1;
+            return slotCount = 10;
+        }
+        else if (upgradeTier == 1)
+        {
+            //Tier 2 upgrade
+            upgradeTier = 2;
+            return slotCount = 15;
+
+        }
+        else if (upgradeTier == 2)
+        {
+            //Tier 3 upgrade
+            upgradeTier = 3;
+            return slotCount = 20;
+
+        }
+        else if (upgradeTier == 3)
+        {
+            //Tier 4 upgrade
+            upgradeTier = 4;
+            return slotCount = 27; //Max upgrade
+        }
+        else
+        {
+            return slotCount;
+        }
+    }
+
+    public int GetUpgradeTier()
+    {
+        return upgradeTier;
     }
 }

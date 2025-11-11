@@ -92,6 +92,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a542d71da46679d4a885faa7b288f4bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  minDropDistance: 2
+  maxDropDistance: 3
 --- !u!225 &3843674867490833933
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -117,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   ID: 0
+  Name: Mana Potion
 --- !u!212 &2416845748236010941
 SpriteRenderer:
   m_ObjectHideFlags: 0

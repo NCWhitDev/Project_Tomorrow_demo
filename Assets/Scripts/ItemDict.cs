@@ -24,10 +24,13 @@ public class ItemDict : MonoBehaviour
             }
         }
 
-        foreach(Item item in itemsPrefab)
+        foreach (Item item in itemsPrefab)
         {
+
             itemDict[item.ID] = item.gameObject; // Add item to dictionary
         }
+
+        print("ItemDict: " + itemDict);
     }
 
     /*
