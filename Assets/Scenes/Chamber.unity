@@ -840,9 +840,11 @@ MonoBehaviour:
   level: 0
   health: 100
   mana: 0
-  currentMana: 0
-  currentHealth: 0
-  maxhealth: 100
+  Strength: 0
+  Intelligence: 0
+  Endurance: 0
+  Agility: 0
+  Luck: 0
   healthBar: {fileID: 1822137432}
 --- !u!1 &740107411
 GameObject:
@@ -9547,6 +9549,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2776065761971583779, guid: 8a72f49f4a54da94282655b159e6dc2a, type: 3}
   m_PrefabInstance: {fileID: 429035778}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1287612674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3557993135692764545, guid: 20e82e9c53ec15243880b65ee03e2cb1, type: 3}
+  m_PrefabInstance: {fileID: 1643875723}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1375750568
 GameObject:
   m_ObjectHideFlags: 0
@@ -10059,6 +10066,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
+--- !u!1 &1839104831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4252861662171220054, guid: d80e015492100004f9e585efa3872f60, type: 3}
+  m_PrefabInstance: {fileID: 758331542}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1865250230
 GameObject:
   m_ObjectHideFlags: 0
@@ -10226,8 +10238,8 @@ MonoBehaviour:
   upgradeTier: 0
   itemPrefabs:
   - {fileID: 1165319127933915169, guid: c5ccd3f1bf4d476488f0b813700ea52b, type: 3}
-  - {fileID: 4209985796301036262, guid: f22125dfb3b9b3d439887684699f381e, type: 3}
-  - {fileID: 4910615283223823116, guid: 8adaf7243868c7a4190717f025fc0527, type: 3}
+  - {fileID: 1287612674}
+  - {fileID: 1839104831}
 --- !u!114 &2144507222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10248,6 +10260,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2395583646603689805, guid: 16e3ac229da70b94080511b330308b24, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3491157264225959735, guid: 16e3ac229da70b94080511b330308b24, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -10271,6 +10287,10 @@ PrefabInstance:
     - target: {fileID: 3491157264225959735, guid: 16e3ac229da70b94080511b330308b24, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3546653803803891566, guid: 16e3ac229da70b94080511b330308b24, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4863896180416491152, guid: 16e3ac229da70b94080511b330308b24, type: 3}
       propertyPath: m_Name
