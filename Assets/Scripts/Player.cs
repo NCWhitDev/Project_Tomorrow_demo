@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         health = maxhealth;
-        healthBar.SetMaxHealth(maxhealth);
+        //healthBar.SetMaxHealth(maxhealth);
         mana = maxmana;
     }
 
