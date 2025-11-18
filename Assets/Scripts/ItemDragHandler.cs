@@ -96,17 +96,17 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
         //Find player to drop item near
         Transform playerTransform = GameObject.FindGameObjectWithTag("Player")?.transform;
-        if (playerTransform == null)
-        {
-            Debug.LogError("Missing Player tag, cant drop item.");
-            return;
-        }
-        //Random offset so item doesn't drop exactly on player
-        Vector2 dropOffset = Random.insideUnitCircle.normalized * Random.Range(minDropDistance, maxDropDistance); //Random direction and distance within min and max drop distance
-        Vector2 dropPosition = (Vector2)playerTransform.position + dropOffset;
+        //if (playerTransform == null)
+        //{
+        //    Debug.LogError("Missing Player tag, cant drop item.");
+        //    return;
+        //}
+        //////Random offset so item doesn't drop exactly on player
+        ////Vector2 dropOffset = Random.insideUnitCircle.normalized * Random.Range(minDropDistance, maxDropDistance); //Random direction and distance within min and max drop distance
+        ////Vector2 dropPosition = (Vector2)playerTransform.position + dropOffset;
 
-        //Instantiate item in world
-        Instantiate(gameObject, dropPosition, Quaternion.identity); //Instantiate item prefab at drop position in world
+        ////Instantiate item in world
+        //Instantiate(gameObject, dropPosition, Quaternion.identity); //Instantiate item prefab at drop position in world
 
         //Destroy item in inventory UI
         Destroy(gameObject);
