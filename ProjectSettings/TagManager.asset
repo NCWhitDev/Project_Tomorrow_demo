@@ -58,5 +58,8 @@ TagManager:
   - name: WalkBehind
     uniqueID: 2784340065
     locked: 0
+  - name: BottomItems
+    uniqueID: 1480727295
+    locked: 0
   m_RenderingLayers:
   - Default
