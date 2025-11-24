@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1541024317147067083}
   - component: {fileID: -856439165895192226}
   - component: {fileID: -6448042239666114962}
+  - component: {fileID: -7928099123740121069}
   m_Layer: 3
   m_Name: Player
   m_TagString: ActionPlayer
@@ -139,3 +140,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb317675be7f3140a6f0a7405002a57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActionPlayer
+  Playeranimator: {fileID: 0}
+--- !u!114 &-7928099123740121069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5379080882173719397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0455eeac0c04dc5499627e558a2951c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  level: 0
+  health: 0
+  mana: 0
+  Strength: 0
+  Intelligence: 0
+  Endurance: 0
+  Agility: 0
+  Luck: 0
+  healthBar: {fileID: 0}

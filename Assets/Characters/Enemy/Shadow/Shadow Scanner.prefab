@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4431663214868309454}
   - component: {fileID: 7009930965706753697}
   - component: {fileID: 592645114364719371}
+  - component: {fileID: 1689766167228947160}
   m_Layer: 0
   m_Name: Shadow Scanner
   m_TagString: Untagged
@@ -113,3 +114,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1689766167228947160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2648250038476244078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dc4b2d9ac2dfc34d8c395b066632d3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  level: 1
+  health: 25
+  speed: 4
+  maxhealth: 0
