@@ -3882,7 +3882,7 @@ GameObject:
   - component: {fileID: 1552326496}
   - component: {fileID: 1552326495}
   m_Layer: 5
-  m_Name: Defend
+  m_Name: Buff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

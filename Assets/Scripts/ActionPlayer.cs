@@ -2,12 +2,13 @@ using System;
 using UnityEngine;
 
 /*
- * This handels ActionPlayer Animations
+ * This handels ActionPlayer Animations and actions tied to it.
  * 
  * 
  */ 
 public class ActionPlayer : MonoBehaviour
 {
+    private Player playerstats; //Used when buffing or hurt
     public Animator Playeranimator;
 
     //Update is called once per frame

@@ -2,33 +2,45 @@ using UnityEngine;
 
 public class CharacterBattle : MonoBehaviour
 {
-    //TO-DO: Add a call to your ActionPlayerUIButtons to get button ref
-    //TO-DO: Add a call to your TurnOrder to check if its your turn.
     private ActionPlayer Player;
-    private Player playerstats;
-    public Animator Playeranimator;
+    //private AllyNameHere1 ally1;
+    //private AllyNameHere2 ally2;
+    //private AllyNameHere3 ally3;
     private void Awake()
     {
         Player = GetComponent<ActionPlayer>();
     }
 
-    public void Attack()
+    public void Attack(int x)
     {
-        Player.AttackAnimation();
+        if (x == 1)
+        {
+            Player.AttackAnimation();
+        }
     }
 
-    public void HeavyAttack()
+    public void HeavyAttack(int x)
     {
-        Player.HeavyAttackAnimation();
+        if(x == 1)
+        {
+            Player.HeavyAttackAnimation();
+        }
+        
     }
 
-    public void Buff()
+    public void Buff(int x)
     {
-        Player.BufferAnimation();
+        if (x == 1)
+        {
+            Player.BufferAnimation();
+        }
     }
 
-    public void Hurt()
+    public void Hurt(int x)
     {
-        Player.HurtAnimation();
+        if (x == 1)
+        {
+            Player.HurtAnimation();
+        }
     }
 }

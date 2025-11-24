@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 
 //Source: https://docs.unity3d.com/530/Documentation/ScriptReference/UI.Button-onClick.html
 
-public class NewEmptyCSharpScript : MonoBehaviour
+public class BattleHandler : MonoBehaviour
 {
     [SerializeField] private Transform player;
     [SerializeField] private Transform Ally1;
@@ -14,9 +14,15 @@ public class NewEmptyCSharpScript : MonoBehaviour
     [SerializeField] private Transform Enemy2;
     [SerializeField] private Transform Enemy3;
 
+    Player playerStatsComp;
+    Enemy enemyStatsComp1;
+    Enemy enemyStatsComp2;
+    Enemy enemyStatsComp3;
+
     public Player playerStats; //Reference to player stats
     private CharacterBattle Charplayer;
     public Enemy enemyStats; //Reference to enemy stats
+
     public Button BasicAttackButton; //Reference to Basic Attack UIButton.
     public Button HeavyAttackButton; //Reference to Heavy Attack UIButton.
     public Button BuffORDebuffButton; //Reference to Buff/Debuff UIButton.
@@ -40,6 +46,7 @@ public class NewEmptyCSharpScript : MonoBehaviour
         GameObject Enemypos1 = GameObject.Find("Enemy_pos1");
         GameObject Enemypos2 = GameObject.Find("Enemy_pos2");
         GameObject Enemypos3 = GameObject.Find("Enemy_pos3");
+
 
         // Instantiate Clones the object original and returns the clone.
         // When this method clones a child object, it also clones the child's own children. To prevent stack overflow, Unity limits this nested cloning. If you exceed more than half your stack size, Unity throws an InsufficientExecutionStackException.
@@ -72,23 +79,27 @@ public class NewEmptyCSharpScript : MonoBehaviour
             Instantiate(Enemy3, new Vector3(Enemypos3.transform.position.x, Enemypos3.transform.position.y), Quaternion.identity);
         }
 
-            // With the following, which uses GetComponent to access the required components:
-            Player playerStatsComp = Playerpos1.GetComponent<Player>();
-            Enemy enemyStatsComp1 = Enemypos1.GetComponent<Enemy>();
-            Enemy enemyStatsComp2 = Enemypos2.GetComponent<Enemy>();
-            Enemy enemyStatsComp3 = Enemypos3.GetComponent<Enemy>();
+        // With the following, which uses GetComponent to access the required components:
+        
+        //TO-DO: Null Reference!!!
+        int temp1 = enemyStatsComp1.speed;
+        int temp2 = playerStatsComp.getAgility();
 
             if (playerStatsComp != null && enemyStatsComp1 != null && playerStatsComp.getAgility() < enemyStatsComp1.speed)
             {
                 turn = TurnOder.WaitingForEnemy1;
+                Debug.Log("Enemy 1 goes first.");
             }
             else if (playerStatsComp != null && enemyStatsComp2 != null && playerStatsComp.getAgility() < enemyStatsComp2.speed)
             {
+                //TO-DO: I need to compare enimies some how so they go in a certain order based of eachothers speed.
                 turn = TurnOder.WaitingForEnemy2;
+                Debug.Log("Enemy 2 goes first.");
             }
             else if (playerStatsComp != null && enemyStatsComp3 != null && playerStatsComp.getAgility() < enemyStatsComp3.speed)
             {
                 turn = TurnOder.WaitingForEnemy3;
+                Debug.Log("Enemy 3 goes first.");
             }
         //else if (Playerpos1.playerStats.getAgility() < Enemypos4.enemyStats.speed)
         //{
@@ -96,6 +107,7 @@ public class NewEmptyCSharpScript : MonoBehaviour
         //}
             else
             {
+                Debug.Log("Player goes first." + temp1 + " " + temp2);
                 turn = TurnOder.WaitingForPlayer;
             }
     }
@@ -106,42 +118,53 @@ public class NewEmptyCSharpScript : MonoBehaviour
        //TO-DO: Check whos turn it is, and see what button they click with that character.
        if(turn == TurnOder.WaitingForPlayer)
        {
-            Button basicAttackB = BasicAttackButton.GetComponent<Button>();
-            Button heavyAttackB = HeavyAttackButton.GetComponent<Button>();
-            Button buffdebuffB = BuffORDebuffButton.GetComponent<Button>();
+            //MAYBE FIX? IDK HOW DRAINING THIS IS...
+            //GameObject BasicAttackButton = GameObject.Find("Attack");
+            //GameObject HeavyAttackButton = GameObject.Find("HeavyAttack");
+            //GameObject BuffORDebuffButton = GameObject.Find("Buff");
+            //Button basicAttackB = BasicAttackButton.GetComponent<Button>();
+            //Button heavyAttackB = HeavyAttackButton.GetComponent<Button>();
+            //Button buffdebuffB = BuffORDebuffButton.GetComponent<Button>();
             //Its the Action Players turn.
-            basicAttackB.onClick.AddListener(calltoAPAttack);
-            heavyAttackB.onClick.AddListener(calltoAPHeavyAttack);
-            buffdebuffB.onClick.AddListener(calltoAPuffer);
+            BasicAttackButton.onClick.RemoveListener(() => ActionPlayer_actions(1));
+            HeavyAttackButton.onClick.RemoveListener(() => ActionPlayer_actions(2));
+            BuffORDebuffButton.onClick.RemoveListener(() => ActionPlayer_actions(3));
         }
        else if(turn == TurnOder.WaitingForAlly1)
        {
             //Its the Ally1's turn.
-       }
+            Debug.Log("Ally one's turn...");
+        }
        else if(turn == TurnOder.WaitingForAlly2)
        {
             //Its the Ally2's turn.
-       }
+            Debug.Log("Ally two's turn...");
+        }
        else if (turn == TurnOder.WaitingForAlly3)
        {
             //Its the Ally3's turn.
-       }
+            Debug.Log("Ally three's turn...");
+        }
        else if (turn == TurnOder.WaitingForEnemy1)
        {
             //Its the Ally3's turn.
+            Debug.Log("Enemy one's turn...");
        }
        else if (turn == TurnOder.WaitingForEnemy2)
        {
-           //Its the Ally3's turn.
-       }
+            //Its the Ally3's turn.
+            Debug.Log("Enemy two's turn...");
+        }
        else if (turn == TurnOder.WaitingForEnemy3)
        {
-           //Its the Ally3's turn.
-       }
+            //Its the Ally3's turn.
+            Debug.Log("Enemy three's turn...");
+        }
        else if (turn == TurnOder.WaitingForBoss)
        {
-           //Its the Ally3's turn.
-       }
+            //Its the Ally3's turn.
+            Debug.Log("Bosses turn...");
+        }
        else
        {
             Debug.Log("There is no state.");
@@ -149,18 +172,26 @@ public class NewEmptyCSharpScript : MonoBehaviour
        }
     }
 
-    void calltoAPAttack()
+    void ActionPlayer_actions(int x)
     {
-        Charplayer.Attack();
-    }
-
-    void calltoAPHeavyAttack()
-    {
-
-    }
-
-    void calltoAPuffer()
-    {
+        Debug.Log("Made it to ActionPlayer_actions");
+        if (x == 1)
+        {
+            Debug.Log("Basic test SWIPE!!!");
+            Charplayer.Attack(1);
+        }
+        else if (x == 2)
+        {
+            Charplayer.HeavyAttack(1);
+        }
+        else if (x == 3)
+        {
+            Charplayer.Buff(1);
+        }
+        else if (x == 4)
+        {
+            Charplayer.Hurt(1);
+        }
 
     }
 }
