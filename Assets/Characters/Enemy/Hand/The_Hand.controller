@@ -61,7 +61,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: handAttack
+    m_ConditionEvent: EnemyAttack
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3483641737354485375}
@@ -86,7 +86,7 @@ AnimatorController:
   m_Name: The_Hand
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: handAttack
+  - m_Name: EnemyAttack
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -114,7 +114,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: handAttack
+    m_ConditionEvent: EnemyAttack
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4396025042124283421}
