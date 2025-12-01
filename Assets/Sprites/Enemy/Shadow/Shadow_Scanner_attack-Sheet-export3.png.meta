@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: 998619a85f08e004db01ccb7fc528b11
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7181236197568688933
+    second: Shadow_Scanner_attack-Sheet-export3_0
+  - first:
+      213: -3178351145999124608
+    second: Shadow_Scanner_attack-Sheet-export3_1
+  - first:
+      213: -1415998704434145022
+    second: Shadow_Scanner_attack-Sheet-export3_2
+  - first:
+      213: -4997462481611350937
+    second: Shadow_Scanner_attack-Sheet-export3_3
+  - first:
+      213: -3686356946456974585
+    second: Shadow_Scanner_attack-Sheet-export3_4
+  - first:
+      213: -7287009574546665043
+    second: Shadow_Scanner_attack-Sheet-export3_5
+  - first:
+      213: -6447080516473699329
+    second: Shadow_Scanner_attack-Sheet-export3_6
+  - first:
+      213: 2445850764506580185
+    second: Shadow_Scanner_attack-Sheet-export3_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export3_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 27
+        width: 296
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdccdb3e9bf175c90800000000000000
+      internalID: -7181236197568688933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export3_1
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 26
+        width: 296
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087344be87a34e3d0800000000000000
+      internalID: -3178351145999124608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export3_2
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 27
+        width: 296
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2091acb3eac595ce0800000000000000
+      internalID: -1415998704434145022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export3_3
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 28
+        width: 313
+        height: 393
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c9635c95275aab0800000000000000
+      internalID: -4997462481611350937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export3_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 29
+        width: 184
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b632b63ed67dcc0800000000000000
+      internalID: -3686356946456974585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export3_5
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 29
+        width: 184
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1964276675fda90800000000000000
+      internalID: -7287009574546665043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export3_6
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 29
+        width: 184
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff34e39ad6e5786a0800000000000000
+      internalID: -6447080516473699329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export3_7
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 29
+        width: 184
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d44808cf4861f120800000000000000
+      internalID: 2445850764506580185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 78d937b8ddd762143ac1fc18d91c157d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Shadow_Scanner_attack-Sheet-export3_0: -7181236197568688933
+      Shadow_Scanner_attack-Sheet-export3_1: -3178351145999124608
+      Shadow_Scanner_attack-Sheet-export3_2: -1415998704434145022
+      Shadow_Scanner_attack-Sheet-export3_3: -4997462481611350937
+      Shadow_Scanner_attack-Sheet-export3_4: -3686356946456974585
+      Shadow_Scanner_attack-Sheet-export3_5: -7287009574546665043
+      Shadow_Scanner_attack-Sheet-export3_6: -6447080516473699329
+      Shadow_Scanner_attack-Sheet-export3_7: 2445850764506580185
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

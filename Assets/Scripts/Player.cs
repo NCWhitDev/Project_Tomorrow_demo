@@ -108,6 +108,16 @@ public class Player : MonoBehaviour
         return Luck;
     }
 
+    public void UpdateHealth()
+    {
+        //Updates health after suffering damage from a source.
+        if(health == 0)
+        {
+            //you died :(
+            Debug.Log("You died...returning to last save location");
+        }
+    }
+
     //// Dev Testing: Simulate taking damage when the 'C' key is pressed
     //void Update()
     //{

@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 9b4a6897468a99247bf2a32dbb887eb7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7249972077474433706
+    second: Shadow_Scanner_attack-Sheet-export9_0
+  - first:
+      213: -8036458349710538310
+    second: Shadow_Scanner_attack-Sheet-export9_1
+  - first:
+      213: 1710039875004086208
+    second: Shadow_Scanner_attack-Sheet-export9_2
+  - first:
+      213: 1460253594779349186
+    second: Shadow_Scanner_attack-Sheet-export9_3
+  - first:
+      213: -5280811008205937654
+    second: Shadow_Scanner_attack-Sheet-export9_4
+  - first:
+      213: -326296361249286065
+    second: Shadow_Scanner_attack-Sheet-export9_5
+  - first:
+      213: 8328650813866643384
+    second: Shadow_Scanner_attack-Sheet-export9_6
+  - first:
+      213: 8135809528112155221
+    second: Shadow_Scanner_attack-Sheet-export9_7
+  - first:
+      213: -6673284198290523013
+    second: Shadow_Scanner_attack-Sheet-export9_8
+  - first:
+      213: -5975783257697224821
+    second: Shadow_Scanner_attack-Sheet-export9_9
+  - first:
+      213: -5584230098279068536
+    second: Shadow_Scanner_attack-Sheet-export9_10
+  - first:
+      213: -5275046141108152917
+    second: Shadow_Scanner_attack-Sheet-export9_11
+  - first:
+      213: 1485036012654947453
+    second: Shadow_Scanner_attack-Sheet-export9_12
+  - first:
+      213: 9031524921475411599
+    second: Shadow_Scanner_attack-Sheet-export9_13
+  - first:
+      213: -4283577407161433978
+    second: Shadow_Scanner_attack-Sheet-export9_14
+  - first:
+      213: 2916911329593457935
+    second: Shadow_Scanner_attack-Sheet-export9_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export9_0
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 413
+        width: 56
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 655b2aabecce26b90800000000000000
+      internalID: -7249972077474433706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export9_1
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 420
+        width: 53
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9084db5b3c87090800000000000000
+      internalID: -8036458349710538310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export9_2
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 423
+        width: 46
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c73f55c4384bb710800000000000000
+      internalID: 1710039875004086208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export9_3
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 305
+        width: 27
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c07fce58ecd34410800000000000000
+      internalID: 1460253594779349186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export9_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 415
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a04a9e1fd5ac6b6b0800000000000000
+      internalID: -5280811008205937654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export9_5
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 287
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f48db303033c87bf0800000000000000
+      internalID: -326296361249286065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export9_6
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 305
+        width: 11
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf0ac2c9cf459370800000000000000
+      internalID: 8328650813866643384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export9_7
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 15
+        width: 389
+        height: 418
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a0d5319a338e070800000000000000
+      internalID: 8135809528112155221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export9_8
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 290
+        width: 10
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c7aa3d06bb363a0800000000000000
+      internalID: -6673284198290523013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export9_9
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 13
+        width: 383
+        height: 422
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87fa36c9c0c11da0800000000000000
+      internalID: -5975783257697224821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export9_10
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 294
+        width: 6
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c0808ef44d082b0800000000000000
+      internalID: -5584230098279068536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export9_11
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 102
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba51479ab754bc6b0800000000000000
+      internalID: -5275046141108152917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export9_12
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 15
+        width: 184
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7ce5fca268eb9410800000000000000
+      internalID: 1485036012654947453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export9_13
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 15
+        width: 184
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e21a4a01c665d70800000000000000
+      internalID: 9031524921475411599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export9_14
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 15
+        width: 184
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68001462b0dad84c0800000000000000
+      internalID: -4283577407161433978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow_Scanner_attack-Sheet-export9_15
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 15
+        width: 184
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0dfab95663fa7820800000000000000
+      internalID: 2916911329593457935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6c6175cff5c10e94598c72ccfe3e0ca9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Shadow_Scanner_attack-Sheet-export9_0: -7249972077474433706
+      Shadow_Scanner_attack-Sheet-export9_1: -8036458349710538310
+      Shadow_Scanner_attack-Sheet-export9_10: -5584230098279068536
+      Shadow_Scanner_attack-Sheet-export9_11: -5275046141108152917
+      Shadow_Scanner_attack-Sheet-export9_12: 1485036012654947453
+      Shadow_Scanner_attack-Sheet-export9_13: 9031524921475411599
+      Shadow_Scanner_attack-Sheet-export9_14: -4283577407161433978
+      Shadow_Scanner_attack-Sheet-export9_15: 2916911329593457935
+      Shadow_Scanner_attack-Sheet-export9_2: 1710039875004086208
+      Shadow_Scanner_attack-Sheet-export9_3: 1460253594779349186
+      Shadow_Scanner_attack-Sheet-export9_4: -5280811008205937654
+      Shadow_Scanner_attack-Sheet-export9_5: -326296361249286065
+      Shadow_Scanner_attack-Sheet-export9_6: 8328650813866643384
+      Shadow_Scanner_attack-Sheet-export9_7: 8135809528112155221
+      Shadow_Scanner_attack-Sheet-export9_8: -6673284198290523013
+      Shadow_Scanner_attack-Sheet-export9_9: -5975783257697224821
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

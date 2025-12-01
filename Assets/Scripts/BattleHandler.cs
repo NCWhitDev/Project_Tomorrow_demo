@@ -1,7 +1,8 @@
-using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
 using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 //Source: https://docs.unity3d.com/530/Documentation/ScriptReference/UI.Button-onClick.html
 
@@ -14,18 +15,16 @@ public class BattleHandler : MonoBehaviour
     [SerializeField] private Transform Enemy2;
     [SerializeField] private Transform Enemy3;
 
+    private Animator playerAnimator;
+    private Transform playerInstance;
     Player playerStatsComp;
     Enemy enemyStatsComp1;
     Enemy enemyStatsComp2;
     Enemy enemyStatsComp3;
-
+    
     public Player playerStats; //Reference to player stats
     private CharacterBattle Charplayer;
     public Enemy enemyStats; //Reference to enemy stats
-
-    public Button BasicAttackButton; //Reference to Basic Attack UIButton.
-    public Button HeavyAttackButton; //Reference to Heavy Attack UIButton.
-    public Button BuffORDebuffButton; //Reference to Buff/Debuff UIButton.
 
     private TurnOder turn;
 
@@ -34,7 +33,7 @@ public class BattleHandler : MonoBehaviour
         WaitingForPlayer, WaitingForAlly1, WaitingForAlly2, WaitingForAlly3,
         WaitingForEnemy1, WaitingForEnemy2, WaitingForEnemy3, 
         WaitingForBoss,
-        Busy
+        Busy, Lost, Victory
     }
 
     public void Start()
@@ -53,7 +52,8 @@ public class BattleHandler : MonoBehaviour
         // Quaternion.identity represents zero rotation relative to world coordinate system, aligned with world axes.
         if (player != null)
         {
-            Instantiate(player, new Vector3(Playerpos1.transform.position.x, Playerpos1.transform.position.y), Quaternion.identity);
+            playerInstance = Instantiate(player, new Vector3(Playerpos1.transform.position.x, Playerpos1.transform.position.y), Quaternion.identity);
+            playerAnimator = playerInstance.GetComponent<Animator>();
         }
 
         if (Ally1 != null)
@@ -80,23 +80,27 @@ public class BattleHandler : MonoBehaviour
         }
 
         // With the following, which uses GetComponent to access the required components:
-        
-        //TO-DO: Null Reference!!!
-        int temp1 = enemyStatsComp1.speed;
-        int temp2 = playerStatsComp.getAgility();
 
-            if (playerStatsComp != null && enemyStatsComp1 != null && playerStatsComp.getAgility() < enemyStatsComp1.speed)
+        //TO-DO: Null Reference!!!
+        //int temp1 = enemyStatsComp1.speed;
+        //int temp2 = playerStatsComp.getAgility();
+        //Change temp1 to playerStatsComp.getAgility() and temp2 to enemyStatsComp1.speed later after solving the null value error!!!
+        int temp1 = 1; //player
+        int temp2 = 0; //enemy(s) for now...
+        //playerStatsComp != null && enemyStatsComp2 != null &&
+
+        if (temp1 < temp2)
             {
                 turn = TurnOder.WaitingForEnemy1;
                 Debug.Log("Enemy 1 goes first.");
             }
-            else if (playerStatsComp != null && enemyStatsComp2 != null && playerStatsComp.getAgility() < enemyStatsComp2.speed)
+        else if (temp1 < temp2)
             {
                 //TO-DO: I need to compare enimies some how so they go in a certain order based of eachothers speed.
                 turn = TurnOder.WaitingForEnemy2;
                 Debug.Log("Enemy 2 goes first.");
             }
-            else if (playerStatsComp != null && enemyStatsComp3 != null && playerStatsComp.getAgility() < enemyStatsComp3.speed)
+        else if (temp1 < temp2)
             {
                 turn = TurnOder.WaitingForEnemy3;
                 Debug.Log("Enemy 3 goes first.");
@@ -105,9 +109,9 @@ public class BattleHandler : MonoBehaviour
         //{
         //For later when I add a boss
         //}
-            else
+        else
             {
-                Debug.Log("Player goes first." + temp1 + " " + temp2);
+                Debug.Log("Player goes first." + temp1 + " > " + temp2);
                 turn = TurnOder.WaitingForPlayer;
             }
     }
@@ -115,83 +119,83 @@ public class BattleHandler : MonoBehaviour
     //Updates every frame
     public void Update()
     {
-       //TO-DO: Check whos turn it is, and see what button they click with that character.
-       if(turn == TurnOder.WaitingForPlayer)
-       {
-            //MAYBE FIX? IDK HOW DRAINING THIS IS...
-            //GameObject BasicAttackButton = GameObject.Find("Attack");
-            //GameObject HeavyAttackButton = GameObject.Find("HeavyAttack");
-            //GameObject BuffORDebuffButton = GameObject.Find("Buff");
-            //Button basicAttackB = BasicAttackButton.GetComponent<Button>();
-            //Button heavyAttackB = HeavyAttackButton.GetComponent<Button>();
-            //Button buffdebuffB = BuffORDebuffButton.GetComponent<Button>();
-            //Its the Action Players turn.
-            BasicAttackButton.onClick.RemoveListener(() => ActionPlayer_actions(1));
-            HeavyAttackButton.onClick.RemoveListener(() => ActionPlayer_actions(2));
-            BuffORDebuffButton.onClick.RemoveListener(() => ActionPlayer_actions(3));
+        if (turn == TurnOder.Lost)
+        {
         }
-       else if(turn == TurnOder.WaitingForAlly1)
-       {
-            //Its the Ally1's turn.
-            Debug.Log("Ally one's turn...");
-        }
-       else if(turn == TurnOder.WaitingForAlly2)
-       {
-            //Its the Ally2's turn.
-            Debug.Log("Ally two's turn...");
-        }
-       else if (turn == TurnOder.WaitingForAlly3)
-       {
-            //Its the Ally3's turn.
-            Debug.Log("Ally three's turn...");
-        }
-       else if (turn == TurnOder.WaitingForEnemy1)
-       {
-            //Its the Ally3's turn.
-            Debug.Log("Enemy one's turn...");
-       }
-       else if (turn == TurnOder.WaitingForEnemy2)
-       {
-            //Its the Ally3's turn.
-            Debug.Log("Enemy two's turn...");
-        }
-       else if (turn == TurnOder.WaitingForEnemy3)
-       {
-            //Its the Ally3's turn.
-            Debug.Log("Enemy three's turn...");
-        }
-       else if (turn == TurnOder.WaitingForBoss)
-       {
-            //Its the Ally3's turn.
-            Debug.Log("Bosses turn...");
-        }
-       else
-       {
-            Debug.Log("There is no state.");
-            Debug.Log("Uhh...There should be a state...?");
-       }
-    }
 
-    void ActionPlayer_actions(int x)
+        if(turn == TurnOder.Victory)
+        {
+        }
+    }
+  
+    public void OnBasicAttackButton()
     {
-        Debug.Log("Made it to ActionPlayer_actions");
-        if (x == 1)
+        if (turn == TurnOder.WaitingForPlayer)
         {
-            Debug.Log("Basic test SWIPE!!!");
-            Charplayer.Attack(1);
-        }
-        else if (x == 2)
-        {
-            Charplayer.HeavyAttack(1);
-        }
-        else if (x == 3)
-        {
-            Charplayer.Buff(1);
-        }
-        else if (x == 4)
-        {
-            Charplayer.Hurt(1);
+            StartCoroutine(PlayerBasicAttack());
+            IEnumerator PlayerBasicAttack()
+            {
+                //Play basic attack animation
+                Debug.Log("Basic test SWIPE!!!");
+                playerAnimator.SetBool("APAttack", true);
+                //Update target health
+
+
+                yield return new WaitForSeconds(1f); // waits 1 seconds
+                playerAnimator.SetBool("APAttack", false);
+
+            }
         }
 
+        if (turn == TurnOder.WaitingForAlly1) return;
+        if (turn == TurnOder.WaitingForAlly2) return;
+        if (turn == TurnOder.WaitingForAlly3) return;
     }
+
+    public void OnHeavyAttackButton()
+    {
+        if (turn == TurnOder.WaitingForPlayer)
+        {
+            StartCoroutine(PlayerOnHeavyAttackButton());
+            IEnumerator PlayerOnHeavyAttackButton()
+            {
+                //Play Heavy attack animation
+                Debug.Log("Heavy test SWIPE!!!");
+                playerAnimator.SetBool("APHeavyAttack", true);
+                //Update target health
+
+                yield return new WaitForSeconds(1f); // waits 1 seconds
+                playerAnimator.SetBool("APHeavyAttack", false);
+            }
+        }
+
+        if (turn == TurnOder.WaitingForAlly1) return;
+        if (turn == TurnOder.WaitingForAlly2) return;
+        if (turn == TurnOder.WaitingForAlly3) return;
+
+    }
+
+    public void OnBuffButton()
+    {
+        if (turn == TurnOder.WaitingForPlayer)
+        {
+            StartCoroutine(PlayerOnBuffButton());
+            IEnumerator PlayerOnBuffButton()
+            {
+                //Play buff target animation
+                Debug.Log("Buff test IM STRONG NOW!!!");
+                playerAnimator.SetBool("APDefend", true);
+                //Update target health
+
+                yield return new WaitForSeconds(2f); // waits 2 seconds
+                playerAnimator.SetBool("APDefend", false);
+            }
+        }
+
+        if (turn == TurnOder.WaitingForAlly1) return;
+        if (turn == TurnOder.WaitingForAlly2) return;
+        if (turn == TurnOder.WaitingForAlly3) return;
+
+    }
+
 }

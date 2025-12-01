@@ -1,0 +1,357 @@
+fileFormatVersion: 2
+guid: 21de813e0ac9c11449a60a94bf72f273
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1444994560738872315
+    second: Truth_idle-Sheet_0
+  - first:
+      213: 4714958816444469954
+    second: Truth_idle-Sheet_1
+  - first:
+      213: -1276441125981513320
+    second: Truth_idle-Sheet_2
+  - first:
+      213: -1664933532607234218
+    second: Truth_idle-Sheet_3
+  - first:
+      213: -5143195284139913008
+    second: Truth_idle-Sheet_4
+  - first:
+      213: -5707467597944460409
+    second: Truth_idle-Sheet_5
+  - first:
+      213: 3118038556207520269
+    second: Truth_idle-Sheet_6
+  - first:
+      213: 2512293331343879814
+    second: Truth_idle-Sheet_7
+  - first:
+      213: 4818660969882780831
+    second: Truth_idle-Sheet_8
+  - first:
+      213: -7787347897325713879
+    second: Truth_idle-Sheet_9
+  - first:
+      213: -5446282367970852858
+    second: Truth_idle-Sheet_10
+  - first:
+      213: -9211493662195698607
+    second: Truth_idle-Sheet_11
+  - first:
+      213: 2806941588600987633
+    second: Truth_idle-Sheet_12
+  - first:
+      213: 671973529343075461
+    second: Truth_idle-Sheet_13
+  - first:
+      213: 6396796386836477326
+    second: Truth_idle-Sheet_14
+  - first:
+      213: -2933609144124142703
+    second: Truth_idle-Sheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Truth_idle-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 21
+        width: 308
+        height: 401
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb4637a5e6ad0410800000000000000
+      internalID: 1444994560738872315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truth_idle-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 18
+        width: 309
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c2d4c80016ee6140800000000000000
+      internalID: 4714958816444469954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truth_idle-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 18
+        width: 307
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8991c2d0f8b294ee0800000000000000
+      internalID: -1276441125981513320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truth_idle-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 20
+        width: 308
+        height: 377
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f3f46f5c7f4e8e0800000000000000
+      internalID: -1664933532607234218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truth_idle-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 19
+        width: 308
+        height: 379
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d0506e8323bf98b0800000000000000
+      internalID: -5143195284139913008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truth_idle-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 20
+        width: 306
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78be77985700bc0b0800000000000000
+      internalID: -5707467597944460409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truth_idle-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 21
+        width: 305
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a98bafb8f754b20800000000000000
+      internalID: 3118038556207520269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truth_idle-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 14
+        width: 308
+        height: 408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68ea55269757dd220800000000000000
+      internalID: 2512293331343879814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6cbba15b9fcc4474eba75e3175df224f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Truth_idle-Sheet_0: 1444994560738872315
+      Truth_idle-Sheet_1: 4714958816444469954
+      Truth_idle-Sheet_10: -5446282367970852858
+      Truth_idle-Sheet_11: -9211493662195698607
+      Truth_idle-Sheet_12: 2806941588600987633
+      Truth_idle-Sheet_13: 671973529343075461
+      Truth_idle-Sheet_14: 6396796386836477326
+      Truth_idle-Sheet_15: -2933609144124142703
+      Truth_idle-Sheet_2: -1276441125981513320
+      Truth_idle-Sheet_3: -1664933532607234218
+      Truth_idle-Sheet_4: -5143195284139913008
+      Truth_idle-Sheet_5: -5707467597944460409
+      Truth_idle-Sheet_6: 3118038556207520269
+      Truth_idle-Sheet_7: 2512293331343879814
+      Truth_idle-Sheet_8: 4818660969882780831
+      Truth_idle-Sheet_9: -7787347897325713879
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

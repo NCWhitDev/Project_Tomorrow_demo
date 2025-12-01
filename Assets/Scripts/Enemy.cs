@@ -9,23 +9,7 @@ public class Enemy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        setHealth(health);
-        setSpeed(speed);
-        setLevel(level);
-    }
-
-    public void setLevel(int level)
-    {
-        this.level = level;
-    }
-    public void setSpeed(int spd)
-    {
-        speed = spd;
-    }
-
-    public void setHealth(int hp)
-    {
-        health = hp;
+        
     }
 
     public int getSpeed()
@@ -36,5 +20,15 @@ public class Enemy : MonoBehaviour
     public int getHealth()
     {
         return health;
+    }
+
+    public void UpdateHealth()
+    {
+        //Updates health after suffering damage from a source.
+        if (health == 0)
+        {
+            //you died :(
+            Debug.Log("Enemy dead, deleting unit.");
+        }
     }
 }

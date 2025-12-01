@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 42390255}
   - component: {fileID: 42390254}
+  - component: {fileID: 42390256}
   m_Layer: 0
   m_Name: Player3_pos
   m_TagString: Untagged
@@ -203,12 +204,28 @@ Transform:
   m_GameObject: {fileID: 42390253}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.72, y: -21.3, z: 0}
+  m_LocalPosition: {x: 12.75, y: -21.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &42390256
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42390253}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &75071553
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,6 +2398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 117444537}
   - component: {fileID: 117444536}
+  - component: {fileID: 117444538}
   m_Layer: 0
   m_Name: Enemy_pos2
   m_TagString: Untagged
@@ -2455,12 +2473,28 @@ Transform:
   m_GameObject: {fileID: 117444535}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.66, y: -19.21, z: 0}
+  m_LocalPosition: {x: 27.97, y: -18.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &117444538
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117444535}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &156832141
 GameObject:
   m_ObjectHideFlags: 0
@@ -2561,7 +2595,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23.18, y: -20.29}
+  m_AnchoredPosition: {x: 23.58, y: -21.27}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &590740744
@@ -2876,6 +2910,7 @@ GameObject:
   m_Component:
   - component: {fileID: 876345971}
   - component: {fileID: 876345970}
+  - component: {fileID: 876345972}
   m_Layer: 0
   m_Name: Enemy_pos3
   m_TagString: Untagged
@@ -2950,12 +2985,28 @@ Transform:
   m_GameObject: {fileID: 876345969}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.72, y: -21.64, z: 0}
+  m_LocalPosition: {x: 28.39, y: -23.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &876345972
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876345969}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &877675678
 GameObject:
   m_ObjectHideFlags: 0
@@ -3785,7 +3836,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1454997946}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2025758632}
+        m_TargetAssemblyTypeName: BattleHandler, Assembly-CSharp
+        m_MethodName: OnBasicAttackButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1454997946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3951,7 +4014,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1552326496}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2025758632}
+        m_TargetAssemblyTypeName: BattleHandler, Assembly-CSharp
+        m_MethodName: OnBuffButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1552326496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4072,7 +4147,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1634725365}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2025758632}
+        m_TargetAssemblyTypeName: BattleHandler, Assembly-CSharp
+        m_MethodName: OnHeavyAttackButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1634725365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4302,6 +4389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1888381548}
   - component: {fileID: 1888381547}
+  - component: {fileID: 1888381549}
   m_Layer: 0
   m_Name: Player2_pos
   m_TagString: Untagged
@@ -4382,6 +4470,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &1888381549
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888381546}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &1939176700
 GameObject:
   m_ObjectHideFlags: 0
@@ -4392,6 +4496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1939176702}
   - component: {fileID: 1939176701}
+  - component: {fileID: 1939176703}
   m_Layer: 0
   m_Name: Player1_pos
   m_TagString: Untagged
@@ -4466,12 +4571,32 @@ Transform:
   m_GameObject: {fileID: 1939176700}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.95, y: -20.3, z: 0}
+  m_LocalPosition: {x: 17.76, y: -20.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &1939176703
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939176700}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: ee9c060feca01f547a4259cfeac95d19, type: 2}
+  - {fileID: 7400000, guid: 405d3b2cfa4f1964fba4c56c3e55663d, type: 2}
+  - {fileID: 7400000, guid: 8a01a2fb04db1774a9075e23401af686, type: 2}
+  - {fileID: 7400000, guid: 1b7e40a385f193847963dc8526b613a2, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &2025758631
 GameObject:
   m_ObjectHideFlags: 0
@@ -4504,14 +4629,11 @@ MonoBehaviour:
   player: {fileID: 180529252462465517, guid: 58da422cab0529d46880273311e0d0cf, type: 3}
   Ally1: {fileID: 0}
   Ally2: {fileID: 0}
-  Enemy1: {fileID: 3871650528262530783, guid: 275accab7d763114491fa6a2cbee328f, type: 3}
-  Enemy2: {fileID: 0}
-  Enemy3: {fileID: 0}
+  Enemy1: {fileID: 8008392758687628789, guid: 62cc19bbbb155154e965023a59354438, type: 3}
+  Enemy2: {fileID: 4073580670317416535, guid: 0f24bda49d62a084ebc71fda42509537, type: 3}
+  Enemy3: {fileID: 4431663214868309454, guid: 956afdaebd68ffc4d8b5a3feb2912045, type: 3}
   playerStats: {fileID: 0}
   enemyStats: {fileID: 0}
-  BasicAttackButton: {fileID: 1454997945}
-  HeavyAttackButton: {fileID: 1634725364}
-  BuffORDebuffButton: {fileID: 1552326495}
 --- !u!4 &2025758633
 Transform:
   m_ObjectHideFlags: 0

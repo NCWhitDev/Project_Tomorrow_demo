@@ -1,0 +1,299 @@
+fileFormatVersion: 2
+guid: 4b997326d8f28b14b8da06e131c978ca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4755369749128346563
+    second: Truth_attack_iguess-Sheet-export_0
+  - first:
+      213: 2705359620278292605
+    second: Truth_attack_iguess-Sheet-export_1
+  - first:
+      213: -1017111946354997175
+    second: Truth_attack_iguess-Sheet-export_2
+  - first:
+      213: 4852908974655897445
+    second: Truth_attack_iguess-Sheet-export_3
+  - first:
+      213: 4747305155952991319
+    second: Truth_attack_iguess-Sheet-export_4
+  - first:
+      213: -829265619980065922
+    second: Truth_attack_iguess-Sheet-export_5
+  - first:
+      213: 4133900277944004589
+    second: Truth_attack_iguess-Sheet-export_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Truth_attack_iguess-Sheet-export_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 280
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34019f7868810eb0800000000000000
+      internalID: -4755369749128346563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truth_attack_iguess-Sheet-export_1
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 0
+        width: 280
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d709f54bd3e5b8520800000000000000
+      internalID: 2705359620278292605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truth_attack_iguess-Sheet-export_2
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 0
+        width: 280
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94844bcd21e72e1f0800000000000000
+      internalID: -1017111946354997175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truth_attack_iguess-Sheet-export_3
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 0
+        width: 280
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f7ba9200ff85340800000000000000
+      internalID: 4852908974655897445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truth_attack_iguess-Sheet-export_4
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 0
+        width: 199
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75c55f413e0d1e140800000000000000
+      internalID: 4747305155952991319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truth_attack_iguess-Sheet-export_5
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 0
+        width: 172
+        height: 347
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73e4a0ff4bdd74f0800000000000000
+      internalID: -829265619980065922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Truth_attack_iguess-Sheet-export_6
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 0
+        width: 172
+        height: 347
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: defadb386609e5930800000000000000
+      internalID: 4133900277944004589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7a7cfa87d1b4263458be069cd2492ead
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Truth_attack_iguess-Sheet-export_0: -4755369749128346563
+      Truth_attack_iguess-Sheet-export_1: 2705359620278292605
+      Truth_attack_iguess-Sheet-export_2: -1017111946354997175
+      Truth_attack_iguess-Sheet-export_3: 4852908974655897445
+      Truth_attack_iguess-Sheet-export_4: 4747305155952991319
+      Truth_attack_iguess-Sheet-export_5: -829265619980065922
+      Truth_attack_iguess-Sheet-export_6: 4133900277944004589
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
