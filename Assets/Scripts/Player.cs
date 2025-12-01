@@ -16,127 +16,73 @@ public class Player : MonoBehaviour
     public int Agility;
     public int Luck;
 
+    //Run-time references
+    private int currentHealth;
+    private int currentMana;
 
     public HealthBar healthBar;
 
+    private void Awake()
+    {
+        currentHealth = maxhealth;
+        currentMana = maxmana;
+    }
+
     void Start()
     {
-        health = maxhealth;
-        //healthBar.SetMaxHealth(maxhealth);
-        mana = maxmana;
-    }
+        currentHealth = health;
+        currentMana = mana;
 
-    // Setters for player stats
-    public void setLevel(int lvl)
-    {
-        level = lvl;
-    }
-
-    public void setHealth(int hp)
-    {
-        health = hp;
-    }
-
-    public void setMana(int mp)
-    {
-        mana = mp;
-    }
-
-    public void setStrength(int str)
-    {
-        Strength = str;
-    }
-
-    public void setIntelligence(int intl)
-    {
-        Intelligence = intl;
-    }
-
-    public void setEndurance(int end)
-    {
-        Endurance = end;
-    }
-
-    public void setAgility(int agi)
-    {
-        Agility = agi;
-    }
-
-    public void setLuck(int luck)
-    {
-        Luck = luck;
-    }
-
-    // Getters for player stats
-    public int getLevel()
-    {
-        return level;
-    }
-
-    public int getHealth()
-    {
-        return health;
-    }
-
-    public int getMana()
-    {
-        return mana;
-    }
-
-    public int getStrength()
-    {
-        return Strength;
-    }
-
-    public int getIntelligence()
-    {
-        return Intelligence;
-    }
-
-    public int getEndurance()
-    {
-        return Endurance;
-    }
-
-    public int getAgility()
-    {
-        return Agility;
-    }
-
-    public int getLuck()
-    {
-        return Luck;
-    }
-
-    public void UpdateHealth()
-    {
-        //Updates health after suffering damage from a source.
-        if(health == 0)
+        if(healthBar != null)
         {
-            //you died :(
-            Debug.Log("You died...returning to last save location");
+            healthBar.SetMaxHealth(maxhealth);
+            healthBar.SetHealth(currentHealth);
         }
     }
 
-    //// Dev Testing: Simulate taking damage when the 'C' key is pressed
-    //void Update()
-    //{
-    //    // Player update logic here
-    //    if ((Input.GetKeyDown(KeyCode.C)))
-    //    {
-    //        TakeDamage(20);
-    //    }
-    //}
 
-    //public void TakeDamage(int damage)
-    //{
-    //    currentHealth -= damage;
-    //    healthBar.SetHealth(currentHealth);
-    //    if (currentHealth <= 0)
-    //    {
-    //        Debug.Log("Player has died.");
-    //    }
-    //}
+    // Getters for player stats
+    public int getLevel() => level;
+    public int getHealth() => currentHealth;
+    public int getMana() => currentMana;
+    public int getStrength() => Strength;
+    public int getIntelligence() => Intelligence;
+    public int getEndurance() => Endurance;
+    public int getAgility() => Agility;
+    public int getLuck() => Luck;
 
-    // ---------------------------------------------------------------------
+    // Setters for player stats
+    public void setLevel(int lvl)           => level = lvl;
+    public void setHealth(int hp)           =>  health = hp;
+    public void setMana(int mp)             => mana = mp;
+    public void setStrength(int str)        => Strength = str;
+    public void setIntelligence(int intel)  => Intelligence = intel;
+    public void setEndurance(int end)       => Endurance = end;
+    public void setAgility(int agi)         => Agility = agi;
+    public void setLuck(int luck)           => Luck = luck;
+
+    public void UpdateHealth(int n)
+    {
+        currentHealth = currentHealth + n;
+
+        if(healthBar != null)
+        {
+            healthBar.SetHealth(currentHealth);
+        }
+
+        if(currentHealth <= 0)
+        {
+            currentHealth = 0;
+            Debug.Log("Player has been defeated! Returning to last saved location");
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        // Implement respawn here
+        //Destroy(gameObject);
+        Debug.Log("Player died.");
+    }
+
 }

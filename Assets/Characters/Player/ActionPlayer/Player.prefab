@@ -153,12 +153,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0455eeac0c04dc5499627e558a2951c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  level: 0
-  health: 0
+  level: 1
+  health: 100
   mana: 0
-  Strength: 0
-  Intelligence: 0
-  Endurance: 0
-  Agility: 0
-  Luck: 0
+  Strength: 8
+  Intelligence: 1
+  Endurance: 1
+  Agility: 1
+  Luck: 1
   healthBar: {fileID: 0}
