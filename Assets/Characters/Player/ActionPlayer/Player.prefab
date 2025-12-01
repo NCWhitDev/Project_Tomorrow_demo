@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   level: 1
-  health: 100
+  health: 2
   mana: 0
   Strength: 8
   Intelligence: 1
@@ -162,3 +162,4 @@ MonoBehaviour:
   Agility: 1
   Luck: 1
   healthBar: {fileID: 0}
+  SC: {fileID: 8542512784404227049, guid: 56557da3ad8f3bb478e5f804349fb638, type: 3}

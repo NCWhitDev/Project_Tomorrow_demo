@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     private int currentMana;
 
     public HealthBar healthBar;
+    [SerializeField] SaveController SC;
 
     private void Awake()
     {
@@ -83,6 +84,8 @@ public class Player : MonoBehaviour
         // Implement respawn here
         //Destroy(gameObject);
         Debug.Log("Player died.");
+        SC.LoadGame();
+
     }
 
 }

@@ -13,6 +13,8 @@ public class BattleHandler : MonoBehaviour
     [SerializeField] private Transform Enemy2;
     [SerializeField] private Transform Enemy3;
 
+    public SaveController saveController;
+
     private Animator playerAnimator;
     private Transform playerInstance;
     //private AnimationClip playerAttackAnim;
@@ -167,6 +169,7 @@ public class BattleHandler : MonoBehaviour
         if (turn == TurnOder.Lost)
         {
             // later: show game over
+            saveController.LoadGame();
         }
 
         if (turn == TurnOder.Victory)
@@ -199,18 +202,34 @@ public class BattleHandler : MonoBehaviour
     {
         //Enemy action logic here
         Debug.Log("Enemy Action happening...");
-        if(turn == TurnOder.WaitingForEnemy1)
+        if (turn == TurnOder.WaitingForEnemy1 && !IsEnemyAlive(enemyStatsComp1))
+        {
+            GoToNextTurn();
+            return;
+        }
+        if (turn == TurnOder.WaitingForEnemy2 && !IsEnemyAlive(enemyStatsComp2))
+        {
+            GoToNextTurn();
+            return;
+        }
+        if (turn == TurnOder.WaitingForEnemy3 && !IsEnemyAlive(enemyStatsComp3))
+        {
+            GoToNextTurn();
+            return;
+        }
+
+        // existing logic...
+        if (turn == TurnOder.WaitingForEnemy1)
         {
             enemyActionRunning = true;
             StartCoroutine(EnemyBasicAttack());
         }
-        if (turn == TurnOder.WaitingForEnemy2)
+        else if (turn == TurnOder.WaitingForEnemy2)
         {
             enemyActionRunning = true;
             StartCoroutine(EnemyBasic2Attack());
         }
-
-        if (turn == TurnOder.WaitingForEnemy3)
+        else if (turn == TurnOder.WaitingForEnemy3)
         {
             enemyActionRunning = true;
             StartCoroutine(EnemyBasicAttack3());
