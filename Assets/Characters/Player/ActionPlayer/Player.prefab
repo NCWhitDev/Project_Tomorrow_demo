@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   level: 1
-  health: 2
+  health: 30
   mana: 0
   Strength: 8
   Intelligence: 1
