@@ -1,4 +1,0 @@
-
-https://docs.github.com/en/enterprise-cloud@latest/desktop/managing-commits
-
-https://stackoverflow.com/questions/70442064/recover-dropped-stashed-changes-in-github-desktop-windows-10
